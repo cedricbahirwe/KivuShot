@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBD0BD512874CCAE00EED168 /* KivuShotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0BD502874CCAE00EED168 /* KivuShotApp.swift */; };
+		CBD0BD532874CCAE00EED168 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0BD522874CCAE00EED168 /* ContentView.swift */; };
+		CBD0BD552874CCB000EED168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD0BD542874CCB000EED168 /* Assets.xcassets */; };
+		CBD0BD582874CCB000EED168 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD0BD572874CCB000EED168 /* Preview Assets.xcassets */; };
+		CBD0BD622874CCB000EED168 /* KivuShotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0BD612874CCB000EED168 /* KivuShotTests.swift */; };
+		CBD0BD6C2874CCB000EED168 /* KivuShotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0BD6B2874CCB000EED168 /* KivuShotUITests.swift */; };
+		CBD0BD6E2874CCB000EED168 /* KivuShotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0BD6D2874CCB000EED168 /* KivuShotUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBD0BD5E2874CCB000EED168 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBD0BD452874CCAE00EED168 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBD0BD4C2874CCAE00EED168;
+			remoteInfo = KivuShot;
+		};
+		CBD0BD682874CCB000EED168 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBD0BD452874CCAE00EED168 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBD0BD4C2874CCAE00EED168;
+			remoteInfo = KivuShot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CBD0BD4D2874CCAE00EED168 /* KivuShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KivuShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD0BD502874CCAE00EED168 /* KivuShotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KivuShotApp.swift; sourceTree = "<group>"; };
+		CBD0BD522874CCAE00EED168 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CBD0BD542874CCB000EED168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBD0BD572874CCB000EED168 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CBD0BD5D2874CCB000EED168 /* KivuShotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KivuShotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD0BD612874CCB000EED168 /* KivuShotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KivuShotTests.swift; sourceTree = "<group>"; };
+		CBD0BD672874CCB000EED168 /* KivuShotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KivuShotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD0BD6B2874CCB000EED168 /* KivuShotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KivuShotUITests.swift; sourceTree = "<group>"; };
+		CBD0BD6D2874CCB000EED168 /* KivuShotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KivuShotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBD0BD4A2874CCAE00EED168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD0BD5A2874CCB000EED168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD0BD642874CCB000EED168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBD0BD442874CCAE00EED168 = {
+			isa = PBXGroup;
+			children = (
+				CBD0BD4F2874CCAE00EED168 /* KivuShot */,
+				CBD0BD602874CCB000EED168 /* KivuShotTests */,
+				CBD0BD6A2874CCB000EED168 /* KivuShotUITests */,
+				CBD0BD4E2874CCAE00EED168 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBD0BD4E2874CCAE00EED168 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBD0BD4D2874CCAE00EED168 /* KivuShot.app */,
+				CBD0BD5D2874CCB000EED168 /* KivuShotTests.xctest */,
+				CBD0BD672874CCB000EED168 /* KivuShotUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBD0BD4F2874CCAE00EED168 /* KivuShot */ = {
+			isa = PBXGroup;
+			children = (
+				CBD0BD502874CCAE00EED168 /* KivuShotApp.swift */,
+				CBD0BD522874CCAE00EED168 /* ContentView.swift */,
+				CBD0BD542874CCB000EED168 /* Assets.xcassets */,
+				CBD0BD562874CCB000EED168 /* Preview Content */,
+			);
+			path = KivuShot;
+			sourceTree = "<group>";
+		};
+		CBD0BD562874CCB000EED168 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CBD0BD572874CCB000EED168 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CBD0BD602874CCB000EED168 /* KivuShotTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBD0BD612874CCB000EED168 /* KivuShotTests.swift */,
+			);
+			path = KivuShotTests;
+			sourceTree = "<group>";
+		};
+		CBD0BD6A2874CCB000EED168 /* KivuShotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CBD0BD6B2874CCB000EED168 /* KivuShotUITests.swift */,
+				CBD0BD6D2874CCB000EED168 /* KivuShotUITestsLaunchTests.swift */,
+			);
+			path = KivuShotUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBD0BD4C2874CCAE00EED168 /* KivuShot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBD0BD712874CCB000EED168 /* Build configuration list for PBXNativeTarget "KivuShot" */;
+			buildPhases = (
+				CBD0BD492874CCAE00EED168 /* Sources */,
+				CBD0BD4A2874CCAE00EED168 /* Frameworks */,
+				CBD0BD4B2874CCAE00EED168 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KivuShot;
+			productName = KivuShot;
+			productReference = CBD0BD4D2874CCAE00EED168 /* KivuShot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBD0BD5C2874CCB000EED168 /* KivuShotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBD0BD742874CCB000EED168 /* Build configuration list for PBXNativeTarget "KivuShotTests" */;
+			buildPhases = (
+				CBD0BD592874CCB000EED168 /* Sources */,
+				CBD0BD5A2874CCB000EED168 /* Frameworks */,
+				CBD0BD5B2874CCB000EED168 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBD0BD5F2874CCB000EED168 /* PBXTargetDependency */,
+			);
+			name = KivuShotTests;
+			productName = KivuShotTests;
+			productReference = CBD0BD5D2874CCB000EED168 /* KivuShotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBD0BD662874CCB000EED168 /* KivuShotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBD0BD772874CCB000EED168 /* Build configuration list for PBXNativeTarget "KivuShotUITests" */;
+			buildPhases = (
+				CBD0BD632874CCB000EED168 /* Sources */,
+				CBD0BD642874CCB000EED168 /* Frameworks */,
+				CBD0BD652874CCB000EED168 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBD0BD692874CCB000EED168 /* PBXTargetDependency */,
+			);
+			name = KivuShotUITests;
+			productName = KivuShotUITests;
+			productReference = CBD0BD672874CCB000EED168 /* KivuShotUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBD0BD452874CCAE00EED168 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					CBD0BD4C2874CCAE00EED168 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					CBD0BD5C2874CCB000EED168 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = CBD0BD4C2874CCAE00EED168;
+					};
+					CBD0BD662874CCB000EED168 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = CBD0BD4C2874CCAE00EED168;
+					};
+				};
+			};
+			buildConfigurationList = CBD0BD482874CCAE00EED168 /* Build configuration list for PBXProject "KivuShot" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBD0BD442874CCAE00EED168;
+			productRefGroup = CBD0BD4E2874CCAE00EED168 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBD0BD4C2874CCAE00EED168 /* KivuShot */,
+				CBD0BD5C2874CCB000EED168 /* KivuShotTests */,
+				CBD0BD662874CCB000EED168 /* KivuShotUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBD0BD4B2874CCAE00EED168 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBD0BD582874CCB000EED168 /* Preview Assets.xcassets in Resources */,
+				CBD0BD552874CCB000EED168 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD0BD5B2874CCB000EED168 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD0BD652874CCB000EED168 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBD0BD492874CCAE00EED168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBD0BD532874CCAE00EED168 /* ContentView.swift in Sources */,
+				CBD0BD512874CCAE00EED168 /* KivuShotApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD0BD592874CCB000EED168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBD0BD622874CCB000EED168 /* KivuShotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD0BD632874CCB000EED168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBD0BD6E2874CCB000EED168 /* KivuShotUITestsLaunchTests.swift in Sources */,
+				CBD0BD6C2874CCB000EED168 /* KivuShotUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBD0BD5F2874CCB000EED168 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBD0BD4C2874CCAE00EED168 /* KivuShot */;
+			targetProxy = CBD0BD5E2874CCB000EED168 /* PBXContainerItemProxy */;
+		};
+		CBD0BD692874CCB000EED168 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBD0BD4C2874CCAE00EED168 /* KivuShot */;
+			targetProxy = CBD0BD682874CCB000EED168 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CBD0BD6F2874CCB000EED168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBD0BD702874CCB000EED168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBD0BD722874CCB000EED168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KivuShot/Preview Content\"";
+				DEVELOPMENT_TEAM = 6V9B6LUW22;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.incs.cedricbahirwe.KivuShot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBD0BD732874CCB000EED168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KivuShot/Preview Content\"";
+				DEVELOPMENT_TEAM = 6V9B6LUW22;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.incs.cedricbahirwe.KivuShot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CBD0BD752874CCB000EED168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6V9B6LUW22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.incs.cedricbahirwe.KivuShotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KivuShot.app/KivuShot";
+			};
+			name = Debug;
+		};
+		CBD0BD762874CCB000EED168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6V9B6LUW22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.incs.cedricbahirwe.KivuShotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KivuShot.app/KivuShot";
+			};
+			name = Release;
+		};
+		CBD0BD782874CCB000EED168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6V9B6LUW22;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.incs.cedricbahirwe.KivuShotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KivuShot;
+			};
+			name = Debug;
+		};
+		CBD0BD792874CCB000EED168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6V9B6LUW22;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.incs.cedricbahirwe.KivuShotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KivuShot;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBD0BD482874CCAE00EED168 /* Build configuration list for PBXProject "KivuShot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBD0BD6F2874CCB000EED168 /* Debug */,
+				CBD0BD702874CCB000EED168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBD0BD712874CCB000EED168 /* Build configuration list for PBXNativeTarget "KivuShot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBD0BD722874CCB000EED168 /* Debug */,
+				CBD0BD732874CCB000EED168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBD0BD742874CCB000EED168 /* Build configuration list for PBXNativeTarget "KivuShotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBD0BD752874CCB000EED168 /* Debug */,
+				CBD0BD762874CCB000EED168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBD0BD772874CCB000EED168 /* Build configuration list for PBXNativeTarget "KivuShotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBD0BD782874CCB000EED168 /* Debug */,
+				CBD0BD792874CCB000EED168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBD0BD452874CCAE00EED168 /* Project object */;
+}
