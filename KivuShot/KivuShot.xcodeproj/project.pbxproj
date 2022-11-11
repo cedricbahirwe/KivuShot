@@ -71,6 +71,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB7BC793291E4B0500E43800 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB7BC79A291E4B5600E43800 /* Reusable Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB7BC794291E4B0C00E43800 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB7BC795291E4B1300E43800 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CB7BC796291E4B2300E43800 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CBD0BD502874CCAE00EED168 /* KivuShotApp.swift */,
+				CBD0BD522874CCAE00EED168 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CB7BC797291E4B2D00E43800 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CB7BC798291E4B3200E43800 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CB7BC799291E4B3700E43800 /* Resoources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resoources;
+			sourceTree = "<group>";
+		};
+		CB7BC79A291E4B5600E43800 /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Reusable Views";
+			sourceTree = "<group>";
+		};
 		CBD0BD442874CCAE00EED168 = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +153,14 @@
 		CBD0BD4F2874CCAE00EED168 /* KivuShot */ = {
 			isa = PBXGroup;
 			children = (
-				CBD0BD502874CCAE00EED168 /* KivuShotApp.swift */,
-				CBD0BD522874CCAE00EED168 /* ContentView.swift */,
+				CB7BC796291E4B2300E43800 /* App */,
+				CB7BC793291E4B0500E43800 /* Views */,
+				CB7BC795291E4B1300E43800 /* ViewModels */,
+				CB7BC794291E4B0C00E43800 /* Models */,
 				CBD0BD542874CCB000EED168 /* Assets.xcassets */,
+				CB7BC799291E4B3700E43800 /* Resoources */,
+				CB7BC798291E4B3200E43800 /* Extensions */,
+				CB7BC797291E4B2D00E43800 /* Utilities */,
 				CBD0BD562874CCB000EED168 /* Preview Content */,
 			);
 			path = KivuShot;
