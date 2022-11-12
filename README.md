@@ -9,6 +9,7 @@ Discover all the beautiful places of the Kivu
     - a horizontal scroll view (dipslayed on top of the map)
 * The map is zoomed based on **user's location** with a fallback to **median location** of places (here, we could use an advanced algorithm)
 * Places are sorted based on **upvote** or **user's location** (Filtering options) 
+* Places should have categories (hotels, restaurants, etc)
 
 ## Authenticated Users Functionalities
 
