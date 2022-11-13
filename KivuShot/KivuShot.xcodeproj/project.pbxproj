@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB56867C292137B300D52C0B /* PlacesMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB56867B292137B300D52C0B /* PlacesMapView.swift */; };
 		CBD0BD512874CCAE00EED168 /* KivuShotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0BD502874CCAE00EED168 /* KivuShotApp.swift */; };
 		CBD0BD532874CCAE00EED168 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0BD522874CCAE00EED168 /* ContentView.swift */; };
 		CBD0BD552874CCB000EED168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD0BD542874CCB000EED168 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB56867B292137B300D52C0B /* PlacesMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesMapView.swift; sourceTree = "<group>"; };
 		CBD0BD4D2874CCAE00EED168 /* KivuShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KivuShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD0BD502874CCAE00EED168 /* KivuShotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KivuShotApp.swift; sourceTree = "<group>"; };
 		CBD0BD522874CCAE00EED168 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				CB7BC79A291E4B5600E43800 /* Reusable Views */,
+				CB56867B292137B300D52C0B /* PlacesMapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB56867C292137B300D52C0B /* PlacesMapView.swift in Sources */,
 				CBD0BD532874CCAE00EED168 /* ContentView.swift in Sources */,
 				CBD0BD512874CCAE00EED168 /* KivuShotApp.swift in Sources */,
 			);
