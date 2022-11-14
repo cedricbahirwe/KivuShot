@@ -27,9 +27,11 @@ struct PlacesMapView: View {
                                 .clipShape(Circle())
                             Text(place.name)
                                 .shadow(color: .black, radius: 2, x: 2, y: 2)
+                                .multilineTextAlignment(.center)
+                                .lineLimit(2, reservesSpace: false)
                         }
-
-
+                        .frame(width: 100)
+                        .background(.red)
                     }
 
                 }
