@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB40FE3129229BF1007CDE32 /* PlacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB40FE3029229BF1007CDE32 /* PlacesViewModel.swift */; };
+		CB40FE3329229C4E007CDE32 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB40FE3229229C4E007CDE32 /* Place.swift */; };
+		CB40FE3529229C52007CDE32 /* KivuPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB40FE3429229C52007CDE32 /* KivuPlace.swift */; };
+		CB40FE3729229F48007CDE32 /* PlaceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB40FE3629229F48007CDE32 /* PlaceLocation.swift */; };
 		CB56867C292137B300D52C0B /* PlacesMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB56867B292137B300D52C0B /* PlacesMapView.swift */; };
 		CBD0BD512874CCAE00EED168 /* KivuShotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0BD502874CCAE00EED168 /* KivuShotApp.swift */; };
 		CBD0BD532874CCAE00EED168 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0BD522874CCAE00EED168 /* ContentView.swift */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB40FE3029229BF1007CDE32 /* PlacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewModel.swift; sourceTree = "<group>"; };
+		CB40FE3229229C4E007CDE32 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		CB40FE3429229C52007CDE32 /* KivuPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KivuPlace.swift; sourceTree = "<group>"; };
+		CB40FE3629229F48007CDE32 /* PlaceLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceLocation.swift; sourceTree = "<group>"; };
 		CB56867B292137B300D52C0B /* PlacesMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesMapView.swift; sourceTree = "<group>"; };
 		CBD0BD4D2874CCAE00EED168 /* KivuShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KivuShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD0BD502874CCAE00EED168 /* KivuShotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KivuShotApp.swift; sourceTree = "<group>"; };
@@ -73,6 +81,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB40FE2F29229BDB007CDE32 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		CB40FE3829229F4B007CDE32 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CB40FE3229229C4E007CDE32 /* Place.swift */,
+				CB40FE3629229F48007CDE32 /* PlaceLocation.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		CB7BC793291E4B0500E43800 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +109,8 @@
 		CB7BC794291E4B0C00E43800 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CB40FE3829229F4B007CDE32 /* Protocols */,
+				CB40FE3429229C52007CDE32 /* KivuPlace.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -92,6 +118,7 @@
 		CB7BC795291E4B1300E43800 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CB40FE3029229BF1007CDE32 /* PlacesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -156,6 +183,7 @@
 		CBD0BD4F2874CCAE00EED168 /* KivuShot */ = {
 			isa = PBXGroup;
 			children = (
+				CB40FE2F29229BDB007CDE32 /* Managers */,
 				CB7BC796291E4B2300E43800 /* App */,
 				CB7BC793291E4B0500E43800 /* Views */,
 				CB7BC795291E4B1300E43800 /* ViewModels */,
@@ -324,9 +352,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB40FE3129229BF1007CDE32 /* PlacesViewModel.swift in Sources */,
 				CB56867C292137B300D52C0B /* PlacesMapView.swift in Sources */,
+				CB40FE3529229C52007CDE32 /* KivuPlace.swift in Sources */,
+				CB40FE3729229F48007CDE32 /* PlaceLocation.swift in Sources */,
 				CBD0BD532874CCAE00EED168 /* ContentView.swift in Sources */,
 				CBD0BD512874CCAE00EED168 /* KivuShotApp.swift in Sources */,
+				CB40FE3329229C4E007CDE32 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
