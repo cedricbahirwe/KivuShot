@@ -11,6 +11,8 @@
 		CB40FE3329229C4E007CDE32 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB40FE3229229C4E007CDE32 /* Place.swift */; };
 		CB40FE3529229C52007CDE32 /* KivuPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB40FE3429229C52007CDE32 /* KivuPlace.swift */; };
 		CB40FE3729229F48007CDE32 /* PlaceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB40FE3629229F48007CDE32 /* PlaceLocation.swift */; };
+		CB40FE3A2922A0FA007CDE32 /* PlaceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB40FE392922A0FA007CDE32 /* PlaceDetailsView.swift */; };
+		CB40FE3C2922C335007CDE32 /* PlaceBottomOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB40FE3B2922C335007CDE32 /* PlaceBottomOverlayView.swift */; };
 		CB56867C292137B300D52C0B /* PlacesMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB56867B292137B300D52C0B /* PlacesMapView.swift */; };
 		CBD0BD512874CCAE00EED168 /* KivuShotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0BD502874CCAE00EED168 /* KivuShotApp.swift */; };
 		CBD0BD532874CCAE00EED168 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0BD522874CCAE00EED168 /* ContentView.swift */; };
@@ -43,6 +45,8 @@
 		CB40FE3229229C4E007CDE32 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		CB40FE3429229C52007CDE32 /* KivuPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KivuPlace.swift; sourceTree = "<group>"; };
 		CB40FE3629229F48007CDE32 /* PlaceLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceLocation.swift; sourceTree = "<group>"; };
+		CB40FE392922A0FA007CDE32 /* PlaceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsView.swift; sourceTree = "<group>"; };
+		CB40FE3B2922C335007CDE32 /* PlaceBottomOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceBottomOverlayView.swift; sourceTree = "<group>"; };
 		CB56867B292137B300D52C0B /* PlacesMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesMapView.swift; sourceTree = "<group>"; };
 		CBD0BD4D2874CCAE00EED168 /* KivuShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KivuShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD0BD502874CCAE00EED168 /* KivuShotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KivuShotApp.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 			children = (
 				CB7BC79A291E4B5600E43800 /* Reusable Views */,
 				CB56867B292137B300D52C0B /* PlacesMapView.swift */,
+				CB40FE3B2922C335007CDE32 /* PlaceBottomOverlayView.swift */,
+				CB40FE392922A0FA007CDE32 /* PlaceDetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -356,9 +362,11 @@
 				CB56867C292137B300D52C0B /* PlacesMapView.swift in Sources */,
 				CB40FE3529229C52007CDE32 /* KivuPlace.swift in Sources */,
 				CB40FE3729229F48007CDE32 /* PlaceLocation.swift in Sources */,
+				CB40FE3C2922C335007CDE32 /* PlaceBottomOverlayView.swift in Sources */,
 				CBD0BD532874CCAE00EED168 /* ContentView.swift in Sources */,
 				CBD0BD512874CCAE00EED168 /* KivuShotApp.swift in Sources */,
 				CB40FE3329229C4E007CDE32 /* Place.swift in Sources */,
+				CB40FE3A2922A0FA007CDE32 /* PlaceDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

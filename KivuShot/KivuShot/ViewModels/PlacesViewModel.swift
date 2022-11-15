@@ -9,6 +9,8 @@ import SwiftUI
 import MapKit
 
 public typealias PlacesStore = PlacesViewModel
+
+
 public final class PlacesViewModel:  ObservableObject {
     private static let gomaCenter = CLLocationCoordinate2D(latitude: -1.647616,
                                                            longitude: 29.205361)

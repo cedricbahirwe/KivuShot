@@ -10,6 +10,9 @@ import CoreLocation
 public protocol Place: Identifiable, Codable {
     var id: UUID { get }
     var name: String { get set }
+    var summary: String { get set}
+    var longSummary: String { get set }
+    var coverURL: URL { get set }
     var location: PlaceLocation { get set }
 }
 

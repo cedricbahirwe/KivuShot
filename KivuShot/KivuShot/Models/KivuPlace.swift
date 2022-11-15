@@ -12,12 +12,17 @@ public struct KivuPlace: Place {
 
     public var name: String
 
-    public var location: PlaceLocation
+    public var coverURL: URL = URL(string: "https://maps.google.com")!
 
+    public var summary: String = ""
+    public var longSummary: String = ""
+
+    public var location: PlaceLocation
 
     init(id: UUID = UUID(),_ name: String, coordinate: CLLocationCoordinate2D) {
         self.id = id
         self.name = name
+
         self.location = PlaceLocation(coordinate: coordinate)
     }
 
