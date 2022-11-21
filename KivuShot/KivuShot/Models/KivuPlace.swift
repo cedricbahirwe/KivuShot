@@ -12,32 +12,50 @@ public struct KivuPlace: Place {
 
     public var name: String
 
-    public var coverURL: URL = URL(string: "https://maps.google.com")!
+    public var coverURL: URL
 
-    public var summary: String = ""
-    public var longSummary: String = ""
+    public var summary: String
+    public var longSummary: String
 
     public var location: PlaceLocation
 
-    init(id: UUID = UUID(),_ name: String, coordinate: CLLocationCoordinate2D) {
+    public var website: URL?
+
+    public init(id: UUID = UUID(), name: String, coverURL: URL = URL(string: "https://maps.google.com")!, summary: String = "", longSummary: String = "", location: PlaceLocation, website: URL? = nil) {
         self.id = id
         self.name = name
-
-        self.location = PlaceLocation(coordinate: coordinate)
+        self.coverURL = coverURL
+        self.summary = summary
+        self.longSummary = longSummary
+        self.location = location
+        self.website = website
     }
 
-    init(id: UUID = UUID(), _ name: String, _ coordinate: (lat: Double, long: Double)) {
-        self.id = id
-        self.name = name
-        self.location = PlaceLocation(coordinate: CLLocationCoordinate2D(latitude: coordinate.lat,
-                                                                             longitude: coordinate.long))
-    }
-
-    #if DEBUG
+#if DEBUG
     static let examples: [Self] = [
-        KivuPlace("Serena Hotel Goma", (-1.696310, 29.232899)),
-        KivuPlace("Hote Karibu", (-1.667906, 29.180722)),
-        KivuPlace("Hotel Cap Kivu", (-1.680919, 29.213611))
+        KivuPlace(name: "Serena Hotel Goma",
+                  coverURL: .example,
+                  summary: "Stay in our hotel in Goma, DRC, on Lake Kivu with an Olympic-sized pool and 5-star accommodation.",
+                  location: .serena, website: .example),
+        KivuPlace(name: "Lac Kivu Lodge", coverURL: .example,
+                  summary: "The lodge is decorated properly with an African touch and a mixture of all kinds of culture to cater for all guests.",
+                  longSummary: "The food is great and it serves most of the delicacies. You will have a change to test the best Congolese dishes and other African dishes.",
+                  location: .kivulodge),
+        KivuPlace(name: "Hotel Cap Kivu", coverURL: .example,
+                  summary: "Hôtel audacieux qui capture le glamour et l'ambiance de  Goma.",
+                  longSummary: "Situé dans un décor à couper le souffle du lac Kivu, cet hôtel de style de vie dispose de 70 chambres et suites luxueuses avec vue sur le lac ou la ville.L'hôtel est un haut lieu de la fête et de la gastronomie avec une offre de restaurant , de bar  invitant à une nouvelle expérience chaque jour.Que vous recherchiez une expérience culinaire gastronomique ou que vous souhaitiez plonger dans la piscine, notre complexe propose des choix décontractés ou énergiques.",
+                  location: .capkivu,
+                  website: URL(string: "https://www.capkivuhotel.com/fr"))
     ]
-    #endif
+
+
+    var computedImage: String {
+        switch location {
+        case .serena: return "serena"
+        case .capkivu: return "capkivu"
+        case .kivulodge: return "kivulodge"
+        default: return "hotel.placeholder"
+        }
+    }
+#endif
 }

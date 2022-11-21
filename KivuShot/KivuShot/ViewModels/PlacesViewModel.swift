@@ -25,6 +25,11 @@ public final class PlacesViewModel:  ObservableObject {
     private(set) var places: [KivuPlace] = KivuPlace.examples
     private var currentPlaceIndex = 0
 
+
+    public func getSelectedPlace() -> KivuPlace {
+        places[currentPlaceIndex]
+
+    }
     public func goToNext() {
         currentPlaceIndex += 1
         if currentPlaceIndex >= places.count {
@@ -33,16 +38,16 @@ public final class PlacesViewModel:  ObservableObject {
 
         let place = places[currentPlaceIndex]
 
-        changeMapRegion(to: place.coordinate, range: 0.01)
+        changeMapRegion(to: place.coordinate)
 
     }
 
-    public func changeMapRegion(to coordinate: CLLocationCoordinate2D, range: Double) {
+    public func changeMapRegion(to coordinate: CLLocationCoordinate2D, range: Double = 0.01) {
         // Zoom Out
-        withAnimation {
-            coordinateRegion.span = .init(latitudeDelta: range*5,
-                                          longitudeDelta: range*5)
-        }
+//        withAnimation {
+//            coordinateRegion.span = .init(latitudeDelta: range*5,
+//                                          longitudeDelta: range*5)
+//        }
         // Zoom In
         DispatchQueue.main.asyncAfter(deadline: .now()+0.5) {
             withAnimation {
@@ -50,6 +55,14 @@ public final class PlacesViewModel:  ObservableObject {
                                                            span: .init(latitudeDelta: range,
                                                                        longitudeDelta: range))
             }
+        }
+    }
+
+    public func selectPlace(_ place: any Place) {
+        if let selectedIndex = places.firstIndex(where: { $0.id == place.id }) {
+            currentPlaceIndex = selectedIndex
+
+            changeMapRegion(to: place.coordinate)
         }
     }
 }

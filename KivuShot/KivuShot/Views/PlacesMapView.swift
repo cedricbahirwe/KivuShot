@@ -12,39 +12,46 @@ struct PlacesMapView: View {
     @StateObject private var store = PlacesStore()
     @State var isToggled = false
     var body: some View {
-        ZStack(alignment: .bottom) {
-            Map(
-                coordinateRegion: $store.coordinateRegion,
-                interactionModes: store.interactionModes,
-                showsUserLocation: store.isUserLocationVisible,
-                userTrackingMode: $store.userTrackingMode,
-                annotationItems: store.places) { place in
-                    MapAnnotation(coordinate: place.coordinate) {
-                        VStack {
-                            Image("hotel.placeholder")
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                                .clipShape(Circle())
-                            Text(place.name)
-                                .shadow(color: .black, radius: 2, x: 2, y: 2)
-                                .multilineTextAlignment(.center)
-                                .lineLimit(2, reservesSpace: false)
+        ZStack(alignment: .top) {
+
+            ZStack(alignment: .bottom) {
+                Map(
+                    coordinateRegion: $store.coordinateRegion,
+                    interactionModes: store.interactionModes,
+                    showsUserLocation: store.isUserLocationVisible,
+                    userTrackingMode: $store.userTrackingMode,
+                    annotationItems: store.places) { place in
+                        MapAnnotation(coordinate: place.coordinate) {
+                            VStack(spacing: 5) {
+                                Image("hotel.placeholder")
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                                    .clipShape(Circle())
+                                Text(place.name)
+                                    .font(.caption)
+                                    .shadow(color: .black, radius: 2, x: 2, y: 2)
+                                    .multilineTextAlignment(.center)
+                                    .lineLimit(2, reservesSpace: false)
+                            }
+                            .frame(width: 100)
+                            .onTapGesture {
+                                store.selectPlace(place)
+                            }
                         }
-                        .frame(width: 100)
-                        .background(.red)
+
+
                     }
+                    .ignoresSafeArea()
 
-                }
-                .ignoresSafeArea()
+                PlaceBottomOverlayView(place: store.getSelectedPlace())
+                    .padding(.horizontal, 6)
+                //            Button("Toggle", action: store.goToNext)
+                //                .buttonStyle(.borderedProminent)
 
-            Button("Toggle", action: store.goToNext)
-                .buttonStyle(.borderedProminent)
-
+            }
         }
         .preferredColorScheme(.dark)
     }
-
-
 }
 
 struct PlacesMapView_Previews: PreviewProvider {
