@@ -8,13 +8,39 @@
 import SwiftUI
 
 struct PlaceDetailsView: View {
+    private let screenSize = UIScreen.main.bounds.size.height
+    let place: KivuPlace
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(showsIndicators: false) {
+            VStack {
+                Image(place.computedImage)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(maxWidth: .infinity, maxHeight: screenSize*0.3)
+
+                VStack(alignment: .leading, spacing: 20) {
+                    Text(place.name)
+                        .font(.title.weight(.black))
+                    Text(place.summary)
+                        .font(.title2)
+                        .opacity(0.9)
+
+                    Group {
+                        Text(place.longSummary)
+                            .font(.headline)
+                            .foregroundColor(.secondary)
+                    }
+                }
+                .padding(.horizontal)
+            }
+        }
     }
 }
 
+#if DEBUG
 struct PlaceDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        PlaceDetailsView()
+        PlaceDetailsView(place: .examples[0])
     }
 }
+#endif

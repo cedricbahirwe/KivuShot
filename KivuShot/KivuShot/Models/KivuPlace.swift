@@ -32,11 +32,12 @@ public struct KivuPlace: Place {
     }
 
 #if DEBUG
+    static let serena: Self = Self(name: "Serena Hotel Goma",
+                                   coverURL: .example,
+                                   summary: "Stay in our hotel in Goma, DRC, on Lake Kivu with an Olympic-sized pool and 5-star accommodation.",
+                                   location: .serena, website: .example)
     static let examples: [Self] = [
-        KivuPlace(name: "Serena Hotel Goma",
-                  coverURL: .example,
-                  summary: "Stay in our hotel in Goma, DRC, on Lake Kivu with an Olympic-sized pool and 5-star accommodation.",
-                  location: .serena, website: .example),
+        .serena,
         KivuPlace(name: "Lac Kivu Lodge", coverURL: .example,
                   summary: "The lodge is decorated properly with an African touch and a mixture of all kinds of culture to cater for all guests.",
                   longSummary: "The food is great and it serves most of the delicacies. You will have a change to test the best Congolese dishes and other African dishes.",
@@ -47,7 +48,6 @@ public struct KivuPlace: Place {
                   location: .capkivu,
                   website: URL(string: "https://www.capkivuhotel.com/fr"))
     ]
-
 
     var computedImage: String {
         switch location {

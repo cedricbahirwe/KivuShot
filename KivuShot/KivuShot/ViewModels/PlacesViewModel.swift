@@ -23,11 +23,16 @@ public final class PlacesViewModel:  ObservableObject {
     private(set) var isUserLocationVisible = true
     @Published var userTrackingMode: MapUserTrackingMode = .follow
     private(set) var places: [KivuPlace] = KivuPlace.examples
+    @Published var detailedPlace: KivuPlace?
     private var currentPlaceIndex = 0
 
 
     public func getSelectedPlace() -> KivuPlace {
         places[currentPlaceIndex]
+    }
+
+    public func goToDetails()  {
+        detailedPlace = places[currentPlaceIndex]
     }
 
     public func selectPrevious()  {
