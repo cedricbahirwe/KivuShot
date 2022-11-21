@@ -28,11 +28,25 @@ public final class PlacesViewModel:  ObservableObject {
 
     public func getSelectedPlace() -> KivuPlace {
         places[currentPlaceIndex]
+    }
+
+    public func selectPrevious()  {
+        currentPlaceIndex -= 1
+        if currentPlaceIndex <= 0 {
+            // Fall back to last item in collection
+            currentPlaceIndex = places.count - 1
+        }
+
+        let place = places[currentPlaceIndex]
+
+        changeMapRegion(to: place.coordinate)
 
     }
-    public func goToNext() {
+
+    public func selectNext() {
         currentPlaceIndex += 1
         if currentPlaceIndex >= places.count {
+            // Fall back to first item in collection
             currentPlaceIndex = 0
         }
 

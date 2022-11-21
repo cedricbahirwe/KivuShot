@@ -45,15 +45,41 @@ struct PlacesMapView: View {
 
                 PlaceBottomOverlayView(place: store.getSelectedPlace())
                     .padding(.horizontal, 6)
+                    .gesture(
+                        DragGesture()
+                            .onEnded({ newValue in
+                                if newValue.translation.width > 0 {
+                                    store.selectPrevious()
+                                } else {
+                                    store.selectNext()
+                                }
+                            })
+                    )
+//                    .defersSystemGestures(on: <#T##Edge.Set#>)
                 //            Button("Toggle", action: store.goToNext)
                 //                .buttonStyle(.borderedProminent)
 
             }
+
+            titleHeaderView()
+
         }
         .preferredColorScheme(.dark)
     }
 }
 
+
+extension PlacesMapView {
+    func titleHeaderView() -> some View {
+        Text("KivuShot")
+            .font(.system(.title2, design: .rounded))
+            .fontWeight(.black)
+            .shadow(color: .black, radius: 4, x: 3, y: 3)
+            .padding()
+            .frame(maxWidth: .infinity)
+            .background(.ultraThinMaterial)
+    }
+}
 struct PlacesMapView_Previews: PreviewProvider {
     static var previews: some View {
         PlacesMapView()
