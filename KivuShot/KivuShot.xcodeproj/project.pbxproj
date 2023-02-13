@@ -25,6 +25,7 @@
 		CBD0BD622874CCB000EED168 /* KivuShotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0BD612874CCB000EED168 /* KivuShotTests.swift */; };
 		CBD0BD6C2874CCB000EED168 /* KivuShotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0BD6B2874CCB000EED168 /* KivuShotUITests.swift */; };
 		CBD0BD6E2874CCB000EED168 /* KivuShotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0BD6D2874CCB000EED168 /* KivuShotUITestsLaunchTests.swift */; };
+		CBD7849A293AEF94007AB238 /* LocationSearchAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD78499293AEF94007AB238 /* LocationSearchAlgorithm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		CBD0BD672874CCB000EED168 /* KivuShotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KivuShotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD0BD6B2874CCB000EED168 /* KivuShotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KivuShotUITests.swift; sourceTree = "<group>"; };
 		CBD0BD6D2874CCB000EED168 /* KivuShotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KivuShotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CBD78499293AEF94007AB238 /* LocationSearchAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchAlgorithm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				CB40FE3029229BF1007CDE32 /* PlacesViewModel.swift */,
+				CBD78499293AEF94007AB238 /* LocationSearchAlgorithm.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				CB5F4141292B8CBE00AE2E1A /* PlaceLocation.swift in Sources */,
 				CBD0BD512874CCAE00EED168 /* KivuShotApp.swift in Sources */,
 				CB9A030F2924F4AB004B577C /* URL+Extensions.swift in Sources */,
+				CBD7849A293AEF94007AB238 /* LocationSearchAlgorithm.swift in Sources */,
 				CB40FE3329229C4E007CDE32 /* Place.swift in Sources */,
 				CB9A03142925058E004B577C /* View+Extensions.swift in Sources */,
 				CB40FE3A2922A0FA007CDE32 /* PlaceDetailsView.swift in Sources */,
